@@ -16,7 +16,7 @@ const img = document.querySelector('img');
 
 
 /* Using async and await */
-async function getGifs() {
+async function getGif() {
   try {
     let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=kobe`, {mode: 'cors'});
     let gifData = await response.json()
@@ -26,6 +26,23 @@ async function getGifs() {
   }
 };
 
+window.onload = getGif();
 
-window.onload = getGifs();
+const searchbar = document.getElementById("searchbar");
+const button = document.querySelector("button");
+
+button.addEventListener("click", getNewGif);
+
+
+
+async function getNewGif() {
+  try {
+    let searchValue = searchbar.value;
+    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=${searchValue}`, {mode: 'cors'});
+    let gifData = await response.json()
+    img.src = gifData.data.images.original.url;
+  } catch(err) {
+    alert("No Gif could be found");
+  }
+};
 
