@@ -3,6 +3,7 @@
 ## Project - GIF Generator
 Using fetch with the giphy API to display a gif on a webpage.
 <p> </p>
+
 This project includes:
 - A button that fetches a new image without refreshing the page.
 - A search box so users can search for specific gifs.
