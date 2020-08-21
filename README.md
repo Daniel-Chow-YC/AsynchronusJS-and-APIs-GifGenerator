@@ -8,6 +8,10 @@ This project includes:
 - A button that fetches a new image without refreshing the page.
 - A search box so users can search for specific gifs.
 - An error message is dsplayed if Giphy doesn’t find any gifs with the searched keyword.
+<p> </p>
+
+Todo:
+- Create a backend so that I can store my API Keys and keep my key safely hidden.
 
 ### Promises
 - a promise is an object that might produce a value at some point in the future.
