@@ -12,6 +12,7 @@ This project includes:
 
 Todo:
 - Create a backend so that I can store my API Keys and keep my key safely hidden.
+- Access at: https://daniel-chow-yc.github.io/AsynchronusJS-and-APIs-GifGenerator/
 
 ### Promises
 - a promise is an object that might produce a value at some point in the future.

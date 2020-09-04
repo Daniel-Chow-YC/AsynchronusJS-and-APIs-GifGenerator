@@ -1,4 +1,4 @@
-import apiKey from './config.js';
+// import apiKey from './config.js';
 
 const img = document.querySelector('img');
 
@@ -6,7 +6,7 @@ const img = document.querySelector('img');
 /* Using async and await */
 async function getGif() {
   try {
-    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=kobe`, {mode: 'cors'});
+    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=XyTotbY2WR8YFbK4bGH7zMsnfDklxwO6&s=kobe`, {mode: 'cors'});
     let gifData = await response.json()
     img.src = gifData.data.images.original.url;
   } catch(err) {
@@ -50,7 +50,7 @@ button.addEventListener("click", getNewGif);
 async function getNewGif() {
   try {
     let searchValue = searchbar.value;
-    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=${searchValue}`, {mode: 'cors'});
+    let response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=XyTotbY2WR8YFbK4bGH7zMsnfDklxwO6&s=${searchValue}`, {mode: 'cors'});
     let gifData = await response.json()
     img.src = gifData.data.images.original.url;
   } catch(err) {
