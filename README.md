@@ -10,9 +10,10 @@ This project includes:
 - An error message is dsplayed if Giphy doesn’t find any gifs with the searched keyword.
 <p> </p>
 
+- Access project in browser at: https://daniel-chow-yc.github.io/AsynchronusJS-and-APIs-GifGenerator/
+
 Todo:
 - Create a backend so that I can store my API Keys and keep my key safely hidden.
-- Access at: https://daniel-chow-yc.github.io/AsynchronusJS-and-APIs-GifGenerator/
 
 ### Promises
 - a promise is an object that might produce a value at some point in the future.
